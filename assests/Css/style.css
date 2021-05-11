@@ -1,0 +1,89 @@
+body{
+    background-color:rgb(0, 255, 234)
+}
+.todo-body{
+    background-color: aliceblue;
+    text-align: center;
+    
+    width: auto;
+}
+.todo-body h1{
+    font-family: sans-serif;
+    color: rgb(14, 14, 134);
+    font-size: 2.3rem;
+}
+.form-body{
+    background-color: antiquewhite;
+
+}
+.form-body input{
+    border: none;
+    width: 180px;
+    font-family: sans-serif;
+    border-radius: 18px;
+    height: 60px;
+    background-color: rgb(255, 255, 255);
+}
+.form-body h2{
+    font-family: "Gill Sans", sans-serif;
+    color: rgb(3, 3, 110);
+    font-size: 1.4rem;
+}
+ ul{
+ list-style-type: square;
+ color: red;
+
+}
+.contact{
+    display: flex;
+}
+.details{
+    display: flex;
+    
+}
+.details p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    color: rgb(181, 5, 187);
+    padding-left: 25px;
+}
+.button-del{
+    text-align: end;
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 254, 254);
+    border-radius: 15px;
+    height: 50px;
+}
+
+
+#work{
+    width: 250px;
+    height: 100px;
+    border-radius: 12px;
+    border: none;
+    font-family: sans-serif;
+    font-size: 1.6rem;
+}
+.option-value{
+    background-color: rgb(242, 255, 57);
+    
+    color: black;
+}
+
+.add-task{
+    background-color: rgb(10, 4, 4);
+    color: rgb(255, 254, 254);
+    border-radius: 15px;
+    height: 50px;
+}
+
+.todo-result h1{
+    color: rgb(4, 4, 83);
+    text-align: center;
+    font-family: sans-serif;
+
+}
+.todo-body{
+    border: 2px solid black;
+    border-radius: 25px;
+}

@@ -1,0 +1,63 @@
+<html>
+<head>
+    <title>TodoAPP</title>
+    <link rel="shortcut icon" type="image/jpg" href="https://cdn.pixabay.com/photo/2020/01/21/18/39/todo-4783676__340.png"/>
+    <link rel="stylesheet" href="./Css/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+    <div class="todo-body">
+    <h1><i class="fas fa-th-list"></i>TODOAPP</h1>
+
+    <!-- From that conatin the valueu -->
+    <div class="form-body">
+
+    <form action="/create-todo" method="POST">
+        <br>
+        <h2><i class="far fa-audio-description"></i> DESCRIPTION</h2>
+        <input id="value-in" type="text" name="desc" placeholder="What do you need to do ?" required>
+        <br><hr/>
+        <h2>CATEGORY</h2>
+        
+        <select name="option" id="work" placeholder="Choose your Work">
+            <option value="Select Your Task">Select Your Task</option>
+            <option value="work">Work</option>
+            <option value="school">School</option>
+            <option value="hoilday">Holiday</option>
+            
+            </select>
+            <hr/>
+            <br>
+        <h2><i class="fas fa-calendar-alt"></i> DUE DATE</h2>
+        <input type="date" name="date"  required>
+        <button  class="add-task" type="submit"><i class="fas fa-plus"></i> ADD TASK</button>
+        
+    </form>
+    <br><br>
+    </div>
+    <!-- Result of All Todo Resul -->
+    <div class="todo-result">
+        <h1><i class="fas fa-briefcase"></i> ALL TODO-TASK</h1>
+        <ul>
+                
+            <% for (let i of todo_list) { %> 
+                
+                <li class="contact">
+                    <div class="details">
+                    <p><%= i.desc %></p>
+                    <p class="option-value"><%= i.option %></p>
+                    <p><%= i.date %></p>
+                </div>
+                <div class="delete-button">
+                    <a href="/delete-todo/?id=<%= i._id %>">
+                    <button class="button-del"><i class="fas fa-trash-alt"></i> DELETE TASK</button>
+                    </a>
+                </div>
+                </li>
+                
+            <% } %>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
